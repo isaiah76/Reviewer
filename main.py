@@ -7,10 +7,10 @@ from PyPDF2 import PdfReader
 
 # Load environment variables from .env file
 load_dotenv()
-google_api_key = os.getenv("GOOGLE_API_KEY")
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-if not google_api_key:
-    raise ValueError("Google API key is not set in the environment variables.")
+if not gemini_api_key:
+    raise ValueError("Gemini API key is not set in the environment variables.")
 
 # Initialize the Gemini model
 llm = GoogleGenerativeAI(model="gemini-pro")
@@ -32,7 +32,7 @@ prompt = PromptTemplate(input_variables=["text"], template=prompt_template)
 summarization_chain = LLMChain(prompt=prompt, llm=llm)
 
 def extract_text_from_pdf(pdf_path):
-    """Extract text from each page of the PDF."""
+    # Extract text from each page of the PDF.
     pdf_text = []
     try:
         with open(pdf_path, "rb") as file:
@@ -46,12 +46,12 @@ def extract_text_from_pdf(pdf_path):
     return " ".join(pdf_text)  # Join the list into a single string
 
 def summarize_text_to_bullets(pdf_text):
-    """Summarize the extracted text into bullet points using the LLM."""
+    # Summarize the extracted text into bullet points using the LLM.
     response = summarization_chain.run(text=pdf_text)
     return response
 
 def pdf_to_bullet_summary(pdf_path):
-    """Main function to extract and summarize PDF content."""
+    # Main function to extract and summarize PDF content.
     pdf_text = extract_text_from_pdf(pdf_path)
     bullet_summary = summarize_text_to_bullets(pdf_text)
     return bullet_summary
