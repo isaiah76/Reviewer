@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+venv/
 
 # Environment variables
 .env
@@ -46,4 +47,3 @@ coverage.xml
 
 # Others
 *.log
-
