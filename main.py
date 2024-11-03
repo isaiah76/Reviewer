@@ -8,8 +8,7 @@ try:
     from PyPDF2 import PdfReader
     from pptx import Presentation
     import shutil
-
-    # Load environment variables from .env file
+# Load environment variables from .env file
     load_dotenv()
     google_api_key = os.getenv("GOOGLE_API_KEY")
 

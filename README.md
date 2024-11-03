@@ -37,9 +37,9 @@ _It is recommended to install `unoconv` or `unoserver` aside from `LibreOffice` 
     ```
 
 3. Set up your environment variables:
-- Create a .env file in the root directory of the project and add your Google API key:
+- Create a .env file in the root directory of the project and add your Gemini API key:
    ```bash
-   GOOGLE_API_KEY=your_google_api_key_here
+   GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
 ## Usage
