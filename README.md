@@ -1,10 +1,11 @@
 # Reviewer
 
-Reviewer is a Python program that extracts text from PDF documents and summarizes it into key points and concise summaries. This program uses **LangChain** and **Google's Gemini**.
+Reviewer is a Python program that extracts text from PDF and PowerPoint documents (.pdf, .pptx, .ppt) and summarizes it into key points and concise summaries. This program uses **LangChain** and **Google's Gemini**.
 
 ## Features
 
-- Extract text from PDF documents.
+- Extract text from PDF and PowerPoint files.
+ -Automatically convert .ppt files to .pptx format when needed.
 - Summarize extracted text into bullet points.
 - Easy integration with **LangChain** and **Google's Gemini** for efficient summarization.
 
@@ -14,6 +15,12 @@ Reviewer is a Python program that extracts text from PDF documents and summarize
 - `dotenv`
 - `langchain-google-genai`
 - `PyPDF2`
+- `python-pptx`
+- Optional tools for .ppt to .pptx conversion:
+  - Windows OS: `Microsoft PowerPoint`
+  - Linux /Mac OS: `LibreOffice`
+
+_It is recommended to install `unoconv` or `unoserver` aside from `LibreOffice` for better performance._
 
 ## Installation
 
@@ -37,16 +44,22 @@ Reviewer is a Python program that extracts text from PDF documents and summarize
 
 ## Usage
 
-To use the Reviewer application, run the following command:
+Currently there are two options to choose from for usage:
+1. Provide the path in CLI Arugments
+```bash
+python3 main.py path/to/file
+```
+2. Enter the path when prompted
 ```bash
 python3 main.py
-
 ```
-
-You can specify the PDF file path in the script:
+and then enter the path when prompted:
 ```bash
-pdf_path = "./test.pdf"
+Please enter the path to your file (.pdf, .pptx, or .ppt): path/to/file
 ```
+_Currently only 1 file can be processed at a time._
+
+To exit the program, press `Ctrl + C`. Or, if you are prompted to enter a path, type `exit` and press `Enter`.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for discussion.
