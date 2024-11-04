@@ -10,10 +10,10 @@ try:
     import shutil
 # Load environment variables from .env file
     load_dotenv()
-    google_api_key = os.getenv("GOOGLE_API_KEY")
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-    if not google_api_key:
-        raise ValueError("Google API key is not set in the environment variables.")
+    if not gemini_api_key:
+        raise ValueError("Gemini API key is not set in the environment variables.")
 
     # Initialize the Gemini model
     llm = GoogleGenerativeAI(model="gemini-pro")
