@@ -3,3 +3,4 @@ langchain-google-genai
 langchain
 PyPDF2
 python-pptx
+pyfiglet
