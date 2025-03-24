@@ -70,7 +70,7 @@ install.bat
 
 **Ensure the following dependencies are installed before running the program**
 
-#### Tesseract OCR
+### Tesseract OCR
 
 **Linux**:
 
@@ -95,7 +95,7 @@ brew install tesseract
 
 **Windows**: Download and install from [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki). Ensure the installation path is added to your system PATH.
 
-#### Poppler
+### Poppler
 
 **Linux**:
 
@@ -120,7 +120,7 @@ brew install poppler
 
 **Windows**: Download from [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases) and add it to the system PATH.
 
-#### LibreOffice or unoconv/unoserver (Optional tools for .ppt to .pptx conversion):
+### LibreOffice or unoconv/unoserver (Optional tools for .ppt to .pptx conversion):
 
 **Linux**:
 
@@ -149,7 +149,7 @@ brew install libreoffice
 pip install unoserver
 ```
 
-#### If the installation script didn't process the packages correctly, you can install them directly:
+### If the installation script didn't process the packages correctly, you can install them directly:
 
 ```sh 
 pip install -r requirements.txt
