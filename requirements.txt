@@ -1,6 +1,10 @@
 python-dotenv
 langchain-google-genai
-langchain
+langchain-core
 PyPDF2
 python-pptx
 pyfiglet
+pytesseract
+pdf2image
+pillow
+google-generativeai
