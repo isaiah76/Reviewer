@@ -72,7 +72,7 @@ install.bat
 
 #### Tesseract OCR
 
-Linux:
+**Linux**:
 
 - Debian/Ubuntu:
     ```sh 
@@ -87,17 +87,17 @@ Linux:
     sudo dnf install tesseract
     ```
 
-macOS:
+**macOS**:
 
-    ```sh 
-    brew install tesseract
-    ```
+```sh 
+brew install tesseract
+```
 
-Windows: Download and install from [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki). Ensure the installation path is added to your system PATH.
+**Windows**: Download and install from [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki). Ensure the installation path is added to your system PATH.
 
 #### Poppler
 
-Linux:
+**Linux**:
 
 - Debian/Ubuntu:
     ```sh 
@@ -112,17 +112,17 @@ Linux:
     sudo dnf install poppler-utils
     ```
 
-macOS:
+**macOS**:
 
-    ```sh 
-    brew install poppler
-    ```
+```sh 
+brew install poppler
+```
 
-Windows: Download from [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases) and add it to the system PATH.
+**Windows**: Download from [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases) and add it to the system PATH.
 
 #### LibreOffice or unoconv/unoserver (Optional tools for .ppt to .pptx conversion):
 
-Linux:
+**Linux**:
 
 - Debian/Ubuntu:
     ```sh 
@@ -137,17 +137,17 @@ Linux:
     sudo dnf install libreoffice unoconv
     ```
 
-macOS:
+**macOS**:
 
-    ```sh 
-    brew install libreoffice
-    ```
+```sh 
+brew install libreoffice
+```
 
-for `unoserver`:
+**for `unoserver`**:
 
-    ```sh 
-    pip install unoserver
-    ```
+```sh 
+pip install unoserver
+```
 
 #### If the installation script didn't process the packages correctly, you can install them directly:
 
