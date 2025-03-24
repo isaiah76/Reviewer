@@ -164,6 +164,15 @@ pip install python-dotenv langchain langchain-google-genai google-generativeai P
 ## Environment Variables
 
 Before running the program, create a `.env` file in your root project (or use the provided `.env.example` as a guide).
+
+#### Google Gemini API Key
+
+1. Visit the [Google AI Studio website](https://aistudio.google.com/)
+2. Sign in with your Google account
+3. Navigate to "Get API key" or go to your profile settings
+4. Create a new API key or use an existing one
+5. Copy the API key into your `.env` file
+
 Include your Gemini API key:
 
 ```sh 
