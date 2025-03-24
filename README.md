@@ -46,7 +46,7 @@ _It is recommended to install `unoconv` or `unoserver` aside from `LibreOffice` 
 Clone the repository:
 
 ```bash
-git clone https://github.com/Isaiah512/Reviewer.git
+git clone https://github.com/isaiah76/Reviewer.git
 cd reviewer
 ```
 
