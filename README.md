@@ -89,9 +89,9 @@ Linux:
 
 macOS:
 
-```sh 
-brew install tesseract
-```
+    ```sh 
+    brew install tesseract
+    ```
 
 Windows: Download and install from [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki). Ensure the installation path is added to your system PATH.
 
@@ -114,9 +114,9 @@ Linux:
 
 macOS:
 
-```sh 
-brew install poppler
-```
+    ```sh 
+    brew install poppler
+    ```
 
 Windows: Download from [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases) and add it to the system PATH.
 
@@ -139,17 +139,17 @@ Linux:
 
 macOS:
 
-```sh 
-brew install libreoffice
-```
+    ```sh 
+    brew install libreoffice
+    ```
 
-fpr `unoserver`:
+for `unoserver`:
 
-```sh 
-pip install unoserver
-```
+    ```sh 
+    pip install unoserver
+    ```
 
-If the installation script didn't process the packages correctly, you can install them directly:
+#### If the installation script didn't process the packages correctly, you can install them directly:
 
 ```sh 
 pip install -r requirements.txt
